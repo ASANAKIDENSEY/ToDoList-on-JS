@@ -133,7 +133,7 @@ function createTaskElement(item) {
 
     save();
   });
-
+  //Обработчик события для ввода текста
   inputElem.addEventListener("input", () => {
     item.text = inputElem.value;
   });
