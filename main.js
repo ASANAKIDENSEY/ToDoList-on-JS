@@ -160,6 +160,7 @@ function createTaskElement(item) {
   return { itemElem, inputElem, editBtn, deleteBtn };
 }
 
+//Отображение тасков
 function displayTask() {
   load();
 
@@ -180,7 +181,7 @@ function save() {
 
   localStorage.setItem("todo_list", save);
 }
-
+//Загрузка
 function load() {
   const data = localStorage.getItem("todo_list");
 
